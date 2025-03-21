@@ -1,4 +1,4 @@
-AI-Powered Interviewer
+AI-Powered IntervieweR.
 
 🚀 Overview
 
@@ -22,13 +22,9 @@ Deployment: Vercel / Any cloud provider
 
 📌 AI-Powered Question Generation - Dynamic and adaptive questions based on candidate input.
 
-🎙️ Voice & Text-based Interaction - Users can respond via text or voice.
-
 📝 Real-time Feedback - AI evaluates responses and provides constructive feedback.
 
 📊 Performance Analytics - Track progress with visual insights.
-
-🌐 Multi-Language Support - Conduct interviews in various languages.
 
 🔒 Secure & Scalable - Authentication and secure data handling.
 
@@ -49,7 +45,7 @@ Installation
 Clone the repository and install dependencies:
 
 # Clone the repository
-git clone https://github.com/your-username/ai-powered-interviewer.git
+git clone https://github.com/Shlokmonster/AI-POWERD-INTERVEIW.git
 cd ai-powered-interviewer
 
 # Install dependencies
@@ -68,42 +64,6 @@ Start the development server:
 yarn dev  # or npm run dev
 
 The app will be available at http://localhost:3000.
-
-Deployment
-
-To deploy on Vercel, run:
-
-vercel
-
-Or connect your repository to Vercel's dashboard and deploy seamlessly.
-
-🛠 API Endpoints
-
-Generate Interview Questions
-
-POST /api/generate-question
-
-Request Body: { "topic": "React", "difficulty": "medium" }
-
-Response: { "question": "Explain the virtual DOM in React?" }
-
-Evaluate Answer
-
-POST /api/evaluate-answer
-
-Request Body: { "answer": "Virtual DOM is..." }
-
-Response: { "score": 8.5, "feedback": "Good explanation, but missing details on reconciliation." }
-
-📌 Future Enhancements
-
-🔹 More AI models integration (GPT-4, Claude, etc.)
-
-🔹 Video interview support
-
-🔹 Resume parsing & AI-based recommendations
-
-🔹 Mock coding challenges
 
 🤝 Contributing
 
