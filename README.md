@@ -73,5 +73,8 @@ Contributions are welcome! Feel free to fork the repo and submit PRs.
 
 This project is licensed under the MIT License.
 
+
+<iframe style="width:100%;height:auto;min-width:600px;min-height:400px;" src="https://www.star-history.com/embed?secret=T0s=#mindverse/Second-Me&Date" frameBorder="0"></iframe>
+
 🚀 Level up your interview game with AI! 🚀
 
