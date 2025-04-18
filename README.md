@@ -45,7 +45,7 @@ Installation
 Clone the repository and install dependencies:
 
 # Clone the repository
-git clone https://github.com/Shlokmonster/AI-POWERD-INTERVEIW.git
+git clone https://github.com/Shlokmonster/PrepPal-AI-Powered-Interview-Simulator.git
 cd ai-powered-interviewer
 
 # Install dependencies
