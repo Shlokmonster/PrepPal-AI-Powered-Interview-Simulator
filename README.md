@@ -1,83 +1,93 @@
-# 🤖 AI-Powered Interviewer
 
-AI-Powered Interviewer is an advanced web application built using **Next.js** and **Gemini API** to conduct, analyze, and improve technical and behavioral interviews. This AI-driven solution helps candidates prepare for job interviews by simulating real-world scenarios and providing insightful feedback.
+# PrepPal – AI-Powered Interview Simulator
+
+PrepPal is a full-stack AI-driven mock interview platform that simulates realistic interview conversations using Google's Gemini API. It dynamically generates follow-up questions based on user responses and provides feedback to help candidates prepare effectively.
+
+---
+## System Architecture
+
+![System Architecture](https://i.ibb.co/XkMccjXD/Screenshot-2025-07-19-at-6-02-19-PM.png)
+
+
+**Explanation:**
+
+- The user answers a question through the interface.
+- The response is sent to the backend API route.
+- The backend forwards the message to Gemini API.
+- A follow-up question is generated and returned.
+- The new question is rendered and React state is updated.
 
 ---
 
-## 🚀 Overview
 
-- 🌟 **AI-Powered Question Generation** – Dynamic and adaptive questions based on candidate input.
-- 📝 **Real-time Feedback** – AI evaluates responses and provides constructive feedback.
-- 📊 **Performance Analytics** – Track progress with visual insights.
-- 🔒 **Secure & Scalable** – Authentication and secure data handling.
+## Features
 
----
-
-## 🛠 Tech Stack
-
-| Layer         | Tech                         |
-|---------------|------------------------------|
-| Frontend      | Next.js (React Framework)    |
-| Backend       | API Routes in Next.js        |
-| AI Model      | Gemini API (Google's AI)     |
-| Styling       | Tailwind CSS                 |
-| State Mgmt    | React Hooks                  |
-| Deployment    | Vercel / Cloud Provider      |
+- Real-time mock interview experience with dynamic question generation
+- Contextual follow-up questions powered by Gemini API
+- One-question-at-a-time interface for focused answering
+- Seamless session flow with auto-generated feedback
+- Responsive, minimal UI built for clarity and performance
 
 ---
 
-## 🚀 Getting Started
+## Tech Stack
 
-### ✅ Prerequisites
+- **Frontend:** React.js, Next.js, Tailwind CSS
+- **Backend:** Node.js (via Next.js API routes)
+- **AI:** Google Gemini API
 
-Make sure you have the following installed:
-- Node.js (Latest LTS recommended)
-- Yarn or npm
-- Google Gemini API Key
+---
 
-### 🔧 Installation
+## Setup Instructions
 
-Clone the repository and install dependencies:
+**Prerequisites:**
+
+- Node.js (v16 or later)
+- Gemini API key
+
+**Steps:**
 
 ```bash
 git clone https://github.com/Shlokmonster/PrepPal-AI-Powered-Interview-Simulator.git
-cd ai-powered-interviewer
-
-# Install dependencies
-yarn install  # or npm install
+cd PrepPal-AI-Powered-Interview-Simulator
+npm install
+cp .env.example .env
+# Add your Gemini API key to the .env file
+npm run dev
 ```
 
-### 🔐 Environment Variables
-
-Create a `.env.local` file in the root directory and add:
-
-```env
-NEXT_PUBLIC_GEMINI_API_KEY=your-gemini-api-key-here
-```
-
-### ▶️ Running the App
-
-Start the development server:
-
-```bash
-yarn dev  # or npm run dev
-```
-
-The app will be available at **http://localhost:3000**
+App will run at `http://localhost:3000`.
 
 ---
 
-## 🤝 Contributing
 
-Contributions are welcome! Feel free to fork the repo and submit PRs.
+
+## Project Structure
+
+```
+/pages
+  index.js           # Main interview UI
+  /api
+    interview.js     # Backend API route to handle GPT interaction
+/components
+  QuestionBox.jsx    # Renders current question
+  AnswerInput.jsx    # Accepts user response
+/lib
+  gemini.js          # Gemini API wrapper
+```
 
 ---
 
-## 📜 License
+## Usage Flow
 
-This project is licensed under the **MIT License**.
+1. User starts a new interview session
+2. Initial question is generated
+3. User submits answers in real-time
+4. Gemini API returns follow-up questions based on context
+5. Process continues until the user ends the session
 
 ---
 
-## 🚀 Level up your interview game with AI! 🚀
+## License
 
+This project is licensed under the MIT License. See `LICENSE` file for details.
